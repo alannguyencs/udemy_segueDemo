@@ -12,6 +12,7 @@
 		E73B3DAF2060C017001B5331 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E73B3DAD2060C017001B5331 /* Main.storyboard */; };
 		E73B3DB12060C017001B5331 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E73B3DB02060C017001B5331 /* Assets.xcassets */; };
 		E73B3DB42060C017001B5331 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E73B3DB22060C017001B5331 /* LaunchScreen.storyboard */; };
+		E73B3DBE2060C1F6001B5331 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73B3DBD2060C1F6001B5331 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		E73B3DB02060C017001B5331 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E73B3DB32060C017001B5331 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E73B3DB52060C017001B5331 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E73B3DBD2060C1F6001B5331 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SecondViewController.swift; path = ../SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		E73B3DA82060C017001B5331 /* udemy_segueDemo */ = {
 			isa = PBXGroup;
 			children = (
+				E73B3DBD2060C1F6001B5331 /* SecondViewController.swift */,
 				E73B3DA92060C017001B5331 /* AppDelegate.swift */,
 				E73B3DAB2060C017001B5331 /* ViewController.swift */,
 				E73B3DAD2060C017001B5331 /* Main.storyboard */,
@@ -136,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E73B3DBE2060C1F6001B5331 /* SecondViewController.swift in Sources */,
 				E73B3DAC2060C017001B5331 /* ViewController.swift in Sources */,
 				E73B3DAA2060C017001B5331 /* AppDelegate.swift in Sources */,
 			);
