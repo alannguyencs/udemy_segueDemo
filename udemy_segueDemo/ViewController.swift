@@ -8,9 +8,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, CanReceive {
 
     @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var label: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -28,8 +29,15 @@ class ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
         if segue.identifier == "goToSecondScreen"{
             let destinationVC = segue.destination as! SecondViewController
-            destinationVC.textPassedOver = textField.text!
+            destinationVC.data = textField.text!
+            //become the delegate of the secondeViewController
+            destinationVC.delegate = self
         }
+    }
+    
+    //performce the function in protocol
+    func dataReceived(data: String) {
+        label.text = data
     }
 }
 

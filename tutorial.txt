@@ -1,7 +1,7 @@
-step 1: On the Main.storyboard, add a textField and a button on initial View Controller (viewController1).
-step 2: Create new viewController (viewController2) and add a label on this.
+step 1: On the Main.storyboard, add a textField, button, label on initial View Controller (viewController1).
+step 2: Create new viewController (viewController2) and add a textField, button, label on this.
 step 3: Create new Cocoa Touch Class, name it SecondViewController.swift, subclass  of UIViewController.
 Step 4: Change the class of viewController2 --> SecondViewController
 Step 5: Drag "View Controller" (yeallow button of left top corner) of viewController1 to viewController2 (show) and change Identifier of Storyboard Segue to goToSecondScreen
-Step 6: Link button in viewController1 to ViewController.swift and write its function.
+Step 6: Link button, label and textField in 2 viewControllers to ViewController.swift and write its function.
 Step 7: Complete the remaining code of ViewController.swift and SecondViewController.swift

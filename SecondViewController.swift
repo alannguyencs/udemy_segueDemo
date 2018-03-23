@@ -8,15 +8,21 @@
 
 import UIKit
 
+protocol CanReceive{
+    func dataReceived(data: String)
+}
+
 class SecondViewController: UIViewController {
 
-    var textPassedOver: String?
+    var delegate: CanReceive?
+    var data = ""
     @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var textField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        label.text = textPassedOver
+        label.text = data
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,5 +30,14 @@ class SecondViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func sendBackward(_ sender: Any) {
+        //if delegate can perform without error, it will pass the textField.text to data
+        
+        //when the button is pressed, perform the delegate action (CanRecieved protocol)
+        delegate?.dataReceived(data: textField.text!)
+        
+        //then dismiss the secondViewController to come back the first ViewController
+        dismiss(animated: true, completion: nil)
+    }
+    
 }
